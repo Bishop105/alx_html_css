@@ -1,0 +1,47 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;          /* Enable flexbox on the body */
+    flex-direction: column; /* Stack header, main, and footer vertically */
+    height: 100vh;        /* Make the body take the full viewport height */
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    display: flex;         /* Enable flexbox on the main */
+    flex-direction: row;  /* Arrange article and aside horizontally */
+    flex: auto;           /* Allow main to grow and fill available space */
+    overflow: hidden;     /* Prevent overflow from main */
+}
+
+article {
+    flex: 2;              /* Article takes 2 parts of the width */
+    padding: 10px;
+    overflow-y: auto;     /* Allow vertical scrolling */
+    background: #f9f9f9;  /* Light background for article */
+}
+
+aside {
+    flex: 1;              /* Aside takes 1 part of the width */
+    padding: 10px;
+    overflow-y: auto;     /* Allow vertical scrolling */
+    background: #e9ecef;  /* Light background for aside */
+}
+
+footer {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
