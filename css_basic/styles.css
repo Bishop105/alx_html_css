@@ -1,0 +1,47 @@
+.logo {
+  font-size: 2em;
+  padding-right: 10px;
+}
+
+/* 1️⃣ Make <body> a vertical flex container */
+body {
+  display: flex;          /* enable flexbox */
+  flex-direction: column; /* stack header, main, footer top-to-bottom */
+  min-height: 100vh;      /* full viewport height */
+  margin: 0;              /* remove default body margin */
+}
+
+/* 2️⃣ Make <main> a horizontal flex container */
+main {
+  display: flex;          /* enable flexbox for article + aside */
+  flex-direction: row;    /* arrange them side by side */
+  flex: auto;             /* automatically grow/shrink to fill space between header and footer */
+}
+
+/* 3️⃣ Give article and aside their width ratio */
+article {
+  flex: 2;                /* take 2 parts → about 2/3 width */
+  overflow-y: auto;       /* vertical scroll if content overflows */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+aside {
+  flex: 1;                /* take 1 part → about 1/3 width */
+  overflow-y: auto;       /* vertical scroll if content overflows */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Optional basic styling so you can see the boxes clearly */
+header, footer {
+  padding: 1rem;
+  box-sizing: border-box;
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+}
+
+main {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
