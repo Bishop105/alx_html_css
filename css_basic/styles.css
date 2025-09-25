@@ -9,6 +9,9 @@ body {
   flex-direction: column; /* stack header, main, footer top-to-bottom */
   min-height: 100vh;      /* full viewport height */
   margin: 0;              /* remove default body margin */
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f5f5;
+  color: #333;
 }
 
 /* 2️⃣ Make <main> a horizontal flex container */
@@ -24,6 +27,11 @@ article {
   overflow-y: auto;       /* vertical scroll if content overflows */
   padding: 1rem;
   box-sizing: border-box;
+}
+
+article h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ccc;
 }
 
 aside {
