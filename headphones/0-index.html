@@ -5,37 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Headphones</title>
     <link rel="stylesheet" href="0-styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="header">
    <header>
-    <nav>
-        <img src="images/logo_headphones.png" alt="logo"/>
-        <ul>
-            <li><a href="#">what we do</a></li>
-            <li><a href="#">our results</a></li>
-            <li><a href="#">contact us</a></li>
-        </ul>
-    </nav>
-   </header>
-   <main class="home">
-     <div class="home1">
-        <h1> Lorem ipsum dolor sit amet lorem ipsum </h1>
-        <h2>Lorem ipsum, dolor sit amet lorem ipsum dolor set</h2>
-     </div>
-     <div class="call-to-action">
-        <!-- <h2>Lorem ipsum, dolor sit amet lorem ipsum dolor set</h2> -->
-        <h2><button>CALL TO ACTION</button></h2>
-     </div>
-     <div>
-        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</h3>
-        <p>labore et dolore magna aliqua. Ut enim ad minim veniam,qius nostrud exercitation ullamco</p>
-        <p>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
-        <p class="center">voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-     </div>
-   </main>
+            <nav class="navbar">
+               <div class="logo">
+                    <a href="0-index.html">
+                        <img src="images/logo_headphones.png" alt="logo">
+                    </a>
+               </div>
 
+               <input type="checkbox" id="menu-toggle">
+               <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+               </label>
 
-  </div>  
-</body>
+               <ul class="nav-links">
+                    <a href="#">what we do</a>
+                    <a href="#">our results</a>
+                    <a href="#">contact us</a>
+               </ul>
+            </nav>
+        </header>
+
+        <main class="content">
+            <section class="hero">
+                <div>
+                    <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+                    <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+
+                    <button type="button" class="cta-btn">CALL TO ACTION</button>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                       elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
